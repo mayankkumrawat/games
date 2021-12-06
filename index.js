@@ -15,12 +15,12 @@ let keys = { ArrowUp: false, ArrowDown: false, ArrowRight: false, ArrowLeft: fal
 // if (screen.availWidth <= 810 || screen.width <= 810){
 let control = document.createElement("div")
 let controlBox = document.getElementById("controlbox")
-control.innerHTML = `<button class="button" id="top">Top</button>
+control.innerHTML = `<button class="button" id="top"><i class="fas fa-angle-double-up"></i></button>
     <div>
-        <button  class="button"  id="left">Left</button>
-        <button  class="button"  id="right">Right</button>
+        <button  class="button"  id="left"></button>
+        <button  class="button"  id="right"></button>
     </div>
-    <button  class="button"  id="bottom">Down</button>`
+    <button  class="button"  id="bottom"><i class="fas fa-angle-double-down"></i></button>`
 controlBox.appendChild(control)
 //}
 
