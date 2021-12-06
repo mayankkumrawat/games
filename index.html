@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css" media="only screen and (max-width:810px)">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/2bdfa1f439.js" crossorigin="anonymous"></script>
 
@@ -20,14 +21,13 @@
     </div>
     <div id="controlbox">
     </div>
-    <!-- <div id="control">
-        <button class="button" id="top">Top</button>
-        <div>
-            <button  class="button"  id="left">Left</button>
-            <button  class="button"  id="right">Right</button>
-        </div>
-        <button  class="button"  id="bottom">Bottom</button>
-    </div> -->
 </body>
-<script src="index.js"></script>
+<script>
+    if (screen && screen.width <= 810 || screen.availWidth <= 810){
+        document.write('<script src="media.js"><\/script>');
+    }else{ 
+        document.write('<script src="index.js"><\/script>');
+    }
+</script>
+
 </html>
